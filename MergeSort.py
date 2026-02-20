@@ -1,15 +1,16 @@
 import sys
 import time
-sys.stdin=open("input_1.inp","r")
-sys.stdout=open("output.out","w")
+import numpy as np
+sys.stdin=open("input_6.inp","r")
+#sys.stdout=open("output.out","w")
 n=int(input())
-a=list(map(int,input().split()))
+a=np.array(list(map(float,input().split())))
 b=[0]*n
 def combine(a,l,mid,r):
     i,j=l,mid+1
     k=0
     while i<=mid and j<=r:
-        if a[i]<a[j]: 
+        if a[i]<a[j]:
             tmp=a[i]
             i+=1
         else: 

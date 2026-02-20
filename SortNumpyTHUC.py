@@ -2,7 +2,7 @@ import sys
 import time
 import numpy as np
 sys.stdin=open("input_6.inp","r")
-sys.stdout=open("output.out","w")
+#sys.stdout=open("output.out","w")
 n=int(input())
 a=np.array(list(map(float,input().split())))
 start=time.perf_counter()
